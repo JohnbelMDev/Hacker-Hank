@@ -2,11 +2,11 @@ function repeatedstring(s,n) {
 
 
 let temp = s;
-
+//set count to zero
 let count=0;
 while(temp.length<n){
 
- temp = temp.concat('',s)
+ temp = temp.concat(' ',s)
 
 }
 temp =temp.substr(0,n)
