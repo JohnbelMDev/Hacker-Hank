@@ -9,7 +9,7 @@ while(temp.length<n){
  temp = temp.concat(' ',s)
 
 }
-// starting from and end at n amountvdd
+// starting from and end at n amount
 temp =temp.substr(0,n)
 console.log(temp);
 for (var i = 0; i < temp.length; i++) {
