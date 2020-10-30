@@ -9,7 +9,7 @@ while(temp.length<n){
  temp = temp.concat(' ',s)
 
 }
-// starting from and end at n timehhhh
+// starting from and end at n time
 temp =temp.substr(0,n)
 console.log(temp);
 for (var i = 0; i < temp.length; i++) {
