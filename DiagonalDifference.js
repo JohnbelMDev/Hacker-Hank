@@ -21,11 +21,16 @@
    //sum left diagonal array
 
    //Loop throught the two dimensional array starting from the last indexes
+        //star from last index of the first array
+        //have the index decrease by 1
        // finish writing. Stop when I'm guessing
    //sum right diagonal array
 
 // Get the difference of left diagonal and right diagonal
 // Get the absolute value of difference
+
+// left is    4 5 10
+
 
 
 function diagonalDifference(arr) {
@@ -33,14 +38,19 @@ function diagonalDifference(arr) {
     let rightDiagonal = []
    //
     for(let i = 0; i < arr.length; i++){
-      // console.log(arr[i][i]);
           leftDiagonal.push(arr[i][i])
     }
-    leftDiagonal.reduce((a,b) => a + b)
+    let leftTotal = leftDiagonal.reduce((a,b) => a + b)
+    let num = arr.length ;
     for(let i = 0; i <  arr.length; i++){
-      rightDiagonal.push(arr[arr.length -1][])
+      num--
+      rightDiagonal.push(arr[i][num])
+
     }
-    console.log(rightDiagonal);
+
+    let rightTotal = rightDiagonal.reduce((a,b) => a + b)
+      return Math.abs(leftTotal - rightTotal);
+
 
 }
 
